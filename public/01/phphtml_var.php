@@ -3,6 +3,7 @@
     $datum = date('d-m-Y');
     $tijd = date("H:i");
     $game = "Super metroid";
+    $moostegetal = 69;
 
     echo $titel;
     echo $datum;
@@ -13,11 +14,12 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title><?php echo "Titel van de pagina" ?></title>
+        <title><?php echo $titel ?></title>
     </head>
     <body>
-        <h2>De datum vandaag is: <?php echo date('d-m-Y')?>, en de tijd is <?php echo date("H:i")?> uur.
+        <h2>De datum vandaag is: <? echo $datum?>, en de tijd is <? echo $tijd?> uur.
         
-        <p><h2>Mijn favoriete game</h2><?php echo "Super metroid";?></p>
+        <p><h2>Mijn favoriete game</h2><? echo $game;?></p>
+        <p><h2>Mooste getal:</h2><?= $moostegetal ?></p>
     </body>
 </html>
