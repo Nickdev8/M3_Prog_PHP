@@ -1,9 +1,6 @@
 <?php
-$aantalOpVoorraad = false;
+$aantalOpVoorraad = 2;
+$opvoorraad = $aantalOpVoorraad > 0 ? "op voorraad" : "niet op voorraad";
 
-if ($aantalOpVoorraad > 0) {
-    echo "op voorraad";
-} else {
-    echo "niet op voorraad";
-}
+echo $opvoorraad;
 ?>
