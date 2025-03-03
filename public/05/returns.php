@@ -1,10 +1,10 @@
 <?php
-function mijnFunction()
+function mijnFunction($string)
 {
-    return "Dit is een functie";
+    return "$string <br>";
 }
 
-$mijnFunctionResultaat = mijnFunction();
 
-print($mijnFunctionResultaat);
-print("<br>");
+echo mijnFunction(rand(1, 100));
+echo mijnFunction(rand(1, 100));
+echo mijnFunction(rand(1, 100));
