@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weerbericht Formulier</title>
+</head>
+
+<body>
+    <h1>Voer het Weerbericht in</h1>
+    <form action="verwerk.php" method="POST">
+        <label for="stad">Naam van de stad:</label>
+        <input type="text" name="stad" placeholder="bijv. Amsterdam" required>
+
+        <label for="datum">Datum:</label>
+        <input type="date" name="datum" required>
+
+        <label for="weer">Weertype:</label>
+        <select name="weer" required>
+            <option value="">Selecteer het weer</option>
+            <option value="zonnig">Zonnig</option>
+            <option value="bewolkt">Bewolkt</option>
+            <option value="regenachtig">Regenachtig</option>
+            <option value="stormachtig">Stormachtig</option>
+        </select>
+
+        <button type="submit">Verstuur</button>
+    </form>
+</body>
+
+</html>
